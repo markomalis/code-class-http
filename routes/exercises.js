@@ -14,7 +14,17 @@ router.get('/1', (req, res, next) => {
 })
 
 router.get('/2', (req, res, next) => {
-    res.status(200).render('exercise_2.html')
+    // Set the 'Location' header so the browser knows what the new location is
+    res.set('Location', '/exercises/2.1')
+    // Return a 302 response and send the response
+    res.status(302).end()
+
+    // Or do everything in one line
+    // res.redirect(302, '/exercises/2.1')
+})
+
+router.get('/2.1', (req, res, next) => {
+    res.status(200).render('exercise_2.1.html')
 })
 
 module.exports = router
