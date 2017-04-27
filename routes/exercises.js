@@ -10,7 +10,11 @@ const router = express.Router();
 
 router.get('/1', (req, res, next) => {
     // Set the status to 200 OK and render the desired page
-    res.status(200).render('exercise_1.html', {})
+    res.status(200).render('exercise_1.html')
+})
+
+router.get('/2', (req, res, next) => {
+    res.status(200).render('exercise_2.html')
 })
 
 module.exports = router
