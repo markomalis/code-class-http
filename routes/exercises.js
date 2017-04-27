@@ -28,11 +28,15 @@ router.get('/2.1', (req, res, next) => {
 })
 
 router.get('/3', (req, res, next) => {
-    res.status(200).render('exercise_3.html', {})
+    res.status(200).render('exercise_3.html')
 })
 
 router.get('/4', (req, res, next) => {
-    res.status(200).render('exercise_4.html', {})
+    res.status(200).render('exercise_4.html')
+})
+
+router.get('/5', (req, res, next) => {
+    res.status(200).render('exercise_5.html')
 })
 
 module.exports = router
