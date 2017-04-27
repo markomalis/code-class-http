@@ -8,6 +8,8 @@ For concise information about status codes visit:
 const express = require('express');
 const router = express.Router();
 
-router.get('/1', (req, res, next) => {})
+router.get('/1', (req, res, next) => {
+
+})
 
 module.exports = router
