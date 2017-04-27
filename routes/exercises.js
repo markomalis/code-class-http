@@ -27,4 +27,8 @@ router.get('/2.1', (req, res, next) => {
     res.status(200).render('exercise_2.1.html')
 })
 
+router.get('/3', (req, res, next) => {
+    res.status(200).render('exercise_3.html', {})
+})
+
 module.exports = router
