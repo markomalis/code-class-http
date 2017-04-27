@@ -1,0 +1,20 @@
+{% extends "_base.html" %}
+
+{% block content %}
+<section>
+    <h1>Response/Request roundtrip</h1>
+    <img src="" alt="">
+    <p>
+        The request in the previous exercise didn't return a correct response.
+        This is because the endpoint is not yet implemented.
+        In the <code>/exercises/5</code> handler (in <code>/routes/exercises.js</code>):
+    </p>
+    <ul>
+        <li>Check the requested content-type of the request</li>
+        <li>Depending on this type, return a JSON or HTML response</li>
+        <li>To return HTML render the <code>song.html</code> template passing an object named song</li>
+        <li>Set the appropriate header to prevent caching of this response</li>
+        <li>Set the appropriate header to specify the content-type of the response</li>
+    </ul>
+</section>
+{% endblock %}

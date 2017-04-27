@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+
+{% block content %}
+<section>
+    <h1>Your favorite song</h1>
+        <ul>
+            {% for k,v in artist %}
+            <li>{{k}} : {{v}}</li>
+            {% endfor %}
+        </ul>
+</section>
+{% endblock %}
