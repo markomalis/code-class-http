@@ -31,4 +31,8 @@ router.get('/3', (req, res, next) => {
     res.status(200).render('exercise_3.html', {})
 })
 
+router.get('/4', (req, res, next) => {
+    res.status(200).render('exercise_4.html', {})
+})
+
 module.exports = router
